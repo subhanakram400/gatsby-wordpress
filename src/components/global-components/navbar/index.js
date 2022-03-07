@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "./index.css"
 import logo from "../../images/logo.png"
+import { Link } from "gatsby"
 
 export const NavBar = () => {
   const [show, handleShow] = useState(false)
@@ -24,9 +25,8 @@ export const NavBar = () => {
       <div className="nav bd_blue">
         <div className="logo bd_yellow">
           {/* <h1>Logo</h1> */}
-          <div style={{ width: "80%" }}>
-            {" "}
-            <img style={{ width: "100%" }} src={logo}></img>
+          <div style={{ width: "100%" }}>
+            <img style={{ width: "100%", height: "100%" }} src={logo}></img>
           </div>
         </div>
         <div className={`nav_menu ${show && "nav_responsive"} bd_red`}>
@@ -38,18 +38,25 @@ export const NavBar = () => {
           >
             <h4>CLOSE</h4>
           </div>
-          <div className={`nav_links ${show && "nav_links_responsive"}`}>
-            Home
-          </div>
-          <div className={`nav_links ${show && "nav_links_responsive"}`}>
-            About Us
-          </div>
-          <div className={`nav_links ${show && "nav_links_responsive"}`}>
-            Contact Us
-          </div>
-          <div className={`nav_links ${show && "nav_links_responsive"}`}>
-            Blogs
-          </div>
+
+          <Link
+            to="/news"
+            className={`nav_links ${show && "nav_links_responsive"}`}
+          >
+            Nyheter
+          </Link>
+          <Link
+            to="/contact-us"
+            className={`nav_links ${show && "nav_links_responsive"}`}
+          >
+            Kontakta oss
+          </Link>
+          <Link
+            to="/about-us"
+            className={`nav_links ${show && "nav_links_responsive"}`}
+          >
+            Om Städkoll
+          </Link>
         </div>
         <div
           className="hammer"

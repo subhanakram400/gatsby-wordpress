@@ -1,0 +1,30 @@
+.card-component {
+    /* border: 2px solid blue; */
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 12px 12px 12px 12px !important;
+    height: 40rem;
+    background-color: #e5e7eb !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+  
+  .home-text{
+      font-size: 25px;
+      margin-top: 2rem;
+      width:80%;
+      
+      margin: 0 auto;
+  }
+  
+  .input-fields{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 4rem;
+  
+  }
+  
+  .col+.col{
+      margin-left: 5rem !important;
+  }

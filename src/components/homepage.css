@@ -1,0 +1,18 @@
+.card-scroll-content {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #e5e7eb !important;
+  border-radius: 4% 0 4% 4% !important;
+  min-width: 350px;
+}
+
+p {
+  font-size: 20px;
+}
+.home-content {
+  background-image: url("https://stadkoll.se/img/home.6c615e45.jpg");
+  background-size: cover;
+  background-position: top left !important;
+  padding-top: 2rem !important;
+  height: 100vh;
+}
